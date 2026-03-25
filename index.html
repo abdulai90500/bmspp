@@ -22,14 +22,12 @@
 
   <!-- Links -->
   <ul class="nav-links" id="navLinks">
-    <li><a onclick="scrollToSection('home')">Home</a></li>
-    <li><a onclick="scrollToSection('about')">About</a></li>
-    <li><a onclick="scrollToSection('services')">Services</a></li>
-    <li><a onclick="scrollToSection('team')">Team</a></li>
-    <li><a onclick="scrollToSection('blog')">Blog</a></li>
-    <li><a onclick="scrollToSection('contact')">Contact</a></li>
-    <li><a class="nav-cta" onclick="openLogin()">Admin</a></li>
-  </ul>
+  <li><a href="#home" onclick="scrollTo('home')">Home</a></li>
+  <li><a href="#about" onclick="scrollTo('about')">About</a></li>
+  <li><a href="#services" onclick="scrollTo('services')">Services</a></li>
+  
+  <li><a href="#contact" onclick="scrollTo('contact')">Contact</a></li>
+</ul>
 
   <!-- Hamburger -->
   <button class="hamburger" id="hamburger" onclick="toggleMenu()">
@@ -175,58 +173,9 @@
     </div>
   </div>
 </section>
-<!-- ===== TEAM ===== -->
-<section id="team">
-  <div class="section-header reveal">
-    <div class="section-tag">Our People</div>
-    <h2>Meet the <em>Team</em></h2>
-  </div>
-  <div class="team-grid">
-    <div class="team-card reveal">
-      <div class="team-avatar">👔</div>
-      <div class="team-info">
-        <h3>Alhaji B. Bangura</h3>
-        <div class="team-role">Chief Executive Officer</div>
-        <p class="team-bio">20+ years of strategic leadership experience across West Africa's financial and business sectors.</p>
-      </div>
-    </div>
-    <div class="team-card reveal">
-      <div class="team-avatar">👩‍💼</div>
-      <div class="team-info">
-        <h3>Aminata H. Koroma</h3>
-        <div class="team-role">Director of Finance</div>
-        <p class="team-bio">CPA with expertise in corporate finance, investment analysis, and regulatory compliance.</p>
-      </div>
-    </div>
-    <div class="team-card reveal">
-      <div class="team-avatar">🧑‍💻</div>
-      <div class="team-info">
-        <h3>Mohamed S. Kamara</h3>
-        <div class="team-role">Head of Strategy</div>
-        <p class="team-bio">Former McKinsey consultant specializing in market entry strategies and organizational restructuring.</p>
-      </div>
-    </div>
-    <div class="team-card reveal">
-      <div class="team-avatar">👩‍🔬</div>
-      <div class="team-info">
-        <h3>Fatima J. Sesay</h3>
-        <div class="team-role">HR & Development Lead</div>
-        <p class="team-bio">Certified HR professional driving talent transformation and organizational excellence programs.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ===== BLOG ===== -->
-<section id="blog">
-  <div class="section-header reveal">
-    <div class="section-tag">Insights</div>
-    <h2>Latest from Our <em>Blog</em></h2>
-  </div>
-  <div class="blog-grid" id="blogGrid">
-    <!-- Populated by JS -->
-  </div>
-</section>
+
+
 
 <!-- ===== CONTACT ===== -->
 <section id="contact">
@@ -239,26 +188,20 @@
       <h3>Ready to Transform Your Business?</h3>
       <p>Whether you're looking to optimize operations, develop strategy, or navigate complex business challenges, our team is ready to help.</p>
       <div class="contact-item">
-        <div class="contact-icon">📍</div>
-        <div class="contact-detail">
-          <strong>Office Address</strong>
-          <span>12 Wilberforce Street, Freetown, Sierra Leone</span>
-        </div>
+      <div class="contact-icon">📍</div>
+      <div class="contact-detail">
+        <strong>Office Address</strong>
+        <span>6 Old Railway Line, Brookfields, Freetown, Sierra Leone</span>
       </div>
-      <div class="contact-item">
-        <div class="contact-icon">📞</div>
-        <div class="contact-detail">
-          <strong>Phone Number</strong>
-          <span>+232 76 000 000</span>
-        </div>
+    </div>
+    
+    <div class="contact-item">
+      <div class="contact-icon">📞</div>
+      <div class="contact-detail">
+        <strong>Phone Numbers</strong>
+        <span>+232 74873450 / +232 80947443</span>
       </div>
-      <div class="contact-item">
-        <div class="contact-icon">✉️</div>
-        <div class="contact-detail">
-          <strong>Email Address</strong>
-          <span>info@bahmanagement.sl</span>
-        </div>
-      </div>
+    </div>
       <div class="contact-item">
         <div class="contact-icon">🕐</div>
         <div class="contact-detail">
@@ -266,40 +209,19 @@
           <span>Mon – Fri: 8:00 AM – 5:00 PM</span>
         </div>
       </div>
-    </div>
     
-          <label>Service Interested In</label>
-          <select id="csvc">
-            <option value="">Select a service...</option>
-            <option>Strategic Management</option>
-            <option>Financial Advisory</option>
-            <option>Operations Consulting</option>
-            <option>HR & Talent Development</option>
-            <option>Risk Management</option>
-            <option>Digital Transformation</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Message</label>
-          <textarea id="cmsg" rows="5" placeholder="Tell us about your project or challenge..."></textarea>
-        </div>
-        <button class="btn-primary" style="width:100%" onclick="submitContact()">Send Message</button>
-      </div>
-      <div class="form-success" id="contactSuccess">
-        <div class="check">✅</div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:0.5rem;">Message Received!</h3>
-        <p style="color:var(--muted)">Thank you for reaching out. Our team will get back to you within 24 hours.</p>
-      </div>
-    </div>
+    
+         
+        
   </div>
 </section>
 
 <!-- ===== FOOTER ===== -->
+<!-- ===== FOOTER ===== -->
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <div class="nav-logo">BAH<span> Management</span></div>
+      <div class="nav-logo">BAH<span> Management Solutions</span></div>
       <p>Delivering strategic excellence and transformative management solutions for businesses across Sierra Leone and West Africa.</p>
     </div>
     <div class="footer-col">
@@ -465,7 +387,38 @@
 <div class="success-toast" id="toast"></div>
 
 <script>
-  
+// =================== NAVIGATION ===================
+function scrollTo(id) {
+  const section = document.getElementById(id);
+  if (!section) return;
+
+  const yOffset = -80;
+  const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+  window.scrollTo({
+    top: y,
+    behavior: 'smooth'
+  });
+
+  closeMenu(); // ✅ closes mobile menu
+}
+
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+
+function closeMenu() {
+  document.getElementById('navLinks').classList.remove('open');
+}
+
+// ✅ EXTRA: force close menu when ANY nav link is clicked
+document.querySelectorAll('#navLinks a').forEach(link => {
+  link.addEventListener('click', () => {
+    closeMenu();
+  });
+});
+
+
 // =================== STATE ===================
 let blogPosts = [
   {
@@ -503,26 +456,14 @@ let blogPosts = [
 let nextId = 4;
 let editingId = null;
 
-// =================== NAVIGATION ===================
-function scrollTo(id) {
-  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-  closeMenu();
-}
 
-function toggleMenu() {
-  document.getElementById('navLinks').classList.toggle('open');
-}
-
-function closeMenu() {
-  document.getElementById('navLinks').classList.remove('open');
-}
-
-// Counter animation
+// =================== SCROLL EFFECTS ===================
 function animateCounters() {
   document.querySelectorAll('[data-count]').forEach(el => {
     const target = parseInt(el.dataset.count);
     let current = 0;
     const step = target / 60;
+
     const timer = setInterval(() => {
       current = Math.min(current + step, target);
       el.textContent = Math.floor(current) + (el.dataset.count == '98' ? '%' : '+');
@@ -531,33 +472,33 @@ function animateCounters() {
   });
 }
 
-// Scroll reveal
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('visible');
-    }
+    if (e.isIntersecting) e.target.classList.add('visible');
   });
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Start counters when hero is visible
 const heroObserver = new IntersectionObserver(entries => {
   if (entries[0].isIntersecting) {
     setTimeout(animateCounters, 800);
     heroObserver.disconnect();
   }
 }, { threshold: 0.3 });
+
 heroObserver.observe(document.getElementById('home'));
 
-// =================== BLOG RENDERING ===================
+
+// =================== BLOG ===================
 function renderBlog() {
   const grid = document.getElementById('blogGrid');
+  if (!grid) return;
+
   grid.innerHTML = blogPosts.slice(0, 6).map((p, i) => `
     <div class="blog-card">
       <div class="blog-img" style="background:${getBlogGradient(i)}">
-        <span style="font-size:3rem;position:relative;z-index:1">${p.emoji}</span>
+        <span style="font-size:3rem">${p.emoji}</span>
         <div class="blog-category">${p.category}</div>
       </div>
       <div class="blog-body">
@@ -586,187 +527,6 @@ function getBlogGradient(i) {
 
 renderBlog();
 
-// =================== CONTACT FORM ===================
-function submitContact() {
-  const fn = document.getElementById('cfn').value.trim();
-  const em = document.getElementById('cem').value.trim();
-  const msg = document.getElementById('cmsg').value.trim();
-  if (!fn || !em || !msg) {
-    showToast('Please fill in all required fields.');
-    return;
-  }
-  document.getElementById('contactFormWrap').style.display = 'none';
-  document.getElementById('contactSuccess').classList.add('show');
-}
-
-// =================== LOGIN ===================
-const ADMIN_USER = 'admin';
-const ADMIN_PASS = 'bah2025';
-
-function openLogin() {
-  document.getElementById('loginModal').classList.add('open');
-  document.getElementById('loginUser').focus();
-}
-
-function closeLogin() {
-  document.getElementById('loginModal').classList.remove('open');
-  document.getElementById('loginError').classList.remove('show');
-}
-
-// Handle /admin route
-if (window.location.pathname === '/admin' || window.location.hash === '#admin') {
-  openLogin();
-}
-
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    closeLogin();
-  }
-});
-
-document.getElementById('loginModal').addEventListener('click', e => {
-  if (e.target === document.getElementById('loginModal')) closeLogin();
-});
-
-function doLogin() {
-  const u = document.getElementById('loginUser').value;
-  const p = document.getElementById('loginPass').value;
-  if (u === ADMIN_USER && p === ADMIN_PASS) {
-    closeLogin();
-    openAdmin();
-  } else {
-    document.getElementById('loginError').classList.add('show');
-    document.getElementById('loginPass').value = '';
-  }
-}
-
-// =================== ADMIN ===================
-function openAdmin() {
-  document.getElementById('admin-panel').classList.add('open');
-  renderAdminPosts();
-  updateDashStats();
-}
-
-function logoutAdmin() {
-  document.getElementById('admin-panel').classList.remove('open');
-  showToast('Logged out successfully.');
-}
-
-function switchTab(name, el) {
-  document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.admin-nav-item').forEach(n => n.classList.remove('active'));
-  document.getElementById('tab-' + name).classList.add('active');
-  if (el) el.classList.add('active');
-  else {
-    const items = document.querySelectorAll('.admin-nav-item');
-    items.forEach(item => {
-      if (item.textContent.toLowerCase().includes(name.replace('-', ' '))) {
-        item.classList.add('active');
-      }
-    });
-  }
-  if (name === 'manage-posts') renderAdminPosts();
-}
-
-function publishPost() {
-  const title = document.getElementById('postTitle').value.trim();
-  const content = document.getElementById('postContent').value.trim();
-  const excerpt = document.getElementById('postExcerpt').value.trim();
-
-  if (!title || !content) {
-    showToast('Title and content are required.');
-    return;
-  }
-
-  const now = new Date();
-  const date = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-
-  if (editingId !== null) {
-    const idx = blogPosts.findIndex(p => p.id === editingId);
-    blogPosts[idx] = {
-      ...blogPosts[idx],
-      title,
-      category: document.getElementById('postCat').value,
-      excerpt: excerpt || title,
-      content,
-      author: document.getElementById('postAuthor').value || 'BAH Editorial',
-      emoji: document.getElementById('postEmoji').value || '📊'
-    };
-    editingId = null;
-    showToast('Post updated successfully!');
-  } else {
-    blogPosts.unshift({
-      id: nextId++,
-      title,
-      category: document.getElementById('postCat').value,
-      excerpt: excerpt || title,
-      content,
-      author: document.getElementById('postAuthor').value || 'BAH Editorial',
-      date,
-      emoji: document.getElementById('postEmoji').value || '📊'
-    });
-    showToast('Post published successfully!');
-  }
-
-  clearPostForm();
-  renderBlog();
-  updateDashStats();
-  switchTab('manage-posts', null);
-}
-
-function clearPostForm() {
-  ['postTitle','postExcerpt','postContent'].forEach(id => document.getElementById(id).value = '');
-  document.getElementById('postEmoji').value = '📊';
-  document.getElementById('postAuthor').value = 'BAH Editorial';
-  editingId = null;
-}
-
-function editPost(id) {
-  const post = blogPosts.find(p => p.id === id);
-  if (!post) return;
-  editingId = id;
-  document.getElementById('postTitle').value = post.title;
-  document.getElementById('postCat').value = post.category;
-  document.getElementById('postExcerpt').value = post.excerpt;
-  document.getElementById('postContent').value = post.content;
-  document.getElementById('postAuthor').value = post.author;
-  document.getElementById('postEmoji').value = post.emoji;
-  switchTab('new-post', document.querySelectorAll('.admin-nav-item')[1]);
-  showToast('Editing post. Make changes and click Publish.');
-}
-
-function deletePost(id) {
-  if (!confirm('Delete this post permanently?')) return;
-  blogPosts = blogPosts.filter(p => p.id !== id);
-  renderAdminPosts();
-  renderBlog();
-  updateDashStats();
-  showToast('Post deleted.');
-}
-
-function renderAdminPosts() {
-  const list = document.getElementById('adminPostsList');
-  if (blogPosts.length === 0) {
-    list.innerHTML = '<p style="color:var(--muted)">No posts yet. Write your first post!</p>';
-    return;
-  }
-  list.innerHTML = blogPosts.map(p => `
-    <div class="post-item">
-      <div class="post-item-info">
-        <h4>${p.emoji} ${p.title}</h4>
-        <span>${p.category} · ${p.date} · By ${p.author}</span>
-      </div>
-      <div class="post-actions">
-        <button class="btn-sm edit" onclick="editPost(${p.id})">Edit</button>
-        <button class="btn-sm delete" onclick="deletePost(${p.id})">Delete</button>
-      </div>
-    </div>
-  `).join('');
-}
-
-function updateDashStats() {
-  document.getElementById('dashPostCount').textContent = blogPosts.length;
-}
 
 // =================== TOAST ===================
 function showToast(msg) {
@@ -776,10 +536,13 @@ function showToast(msg) {
   setTimeout(() => t.classList.remove('show'), 3000);
 }
 
-// Sticky nav shadow
+
+// =================== NAV SCROLL SHADOW ===================
 window.addEventListener('scroll', () => {
   const nav = document.getElementById('navbar');
-  nav.style.boxShadow = window.scrollY > 50 ? '0 4px 30px rgba(0,0,0,0.4)' : 'none';
+  nav.style.boxShadow = window.scrollY > 50 
+    ? '0 4px 30px rgba(0,0,0,0.4)' 
+    : 'none';
 });
 </script>
 </body>
