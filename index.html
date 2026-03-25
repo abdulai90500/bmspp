@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BAH Management Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+<!-- NAV -->
+<!-- NAV -->
+<nav id="navbar">
+  <!-- Logo -->
+  <div class="nav-logo" onclick="scrollToSection('home')">
+    <img src="images/logo.png" alt="Bah Management Solutions Logo" class="logo-img">
+    <span>Bah Management Solutions</span>
+  </div>
+
+  <!-- Links -->
+  <ul class="nav-links" id="navLinks">
+    <li><a onclick="scrollToSection('home')">Home</a></li>
+    <li><a onclick="scrollToSection('about')">About</a></li>
+    <li><a onclick="scrollToSection('services')">Services</a></li>
+    <li><a onclick="scrollToSection('team')">Team</a></li>
+    <li><a onclick="scrollToSection('blog')">Blog</a></li>
+    <li><a onclick="scrollToSection('contact')">Contact</a></li>
+    <li><a class="nav-cta" onclick="openLogin()">Admin</a></li>
+  </ul>
+
+  <!-- Hamburger -->
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    
+    <h1>Bah <em>Management</em><br>Solutions</h1>
+    <p class="hero-sub">BAH Management Solutions delivers comprehensive business advisory, financial management, and organizational development services tailored for growth-focused enterprises.</p>
+    
+  </div>
+ 
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="about-grid">
+    <!-- Visual Card -->
+    <div class="about-visual reveal">
+      <div class="about-card-main">
+        <div class="about-inner-content">
+          <div class="about-icon-big">🏛️</div>
+          <h3>Excellence in Management</h3>
+          <p>Empowering businesses</p>
+        </div>
+      </div>
+      <div class="about-card-float">
+        ✦ Trusted Partner<br>for Growth
+      </div>
+    </div>
+
+    <!-- Text Content -->
+    <div class="about-text reveal">
+      <div class="section-header">
+        <div class="section-tag">About Us</div>
+        <h2> <em>Bah</em> Management Solutions</h2>
+      </div>
+
+      <p>Bah Management Solutions is a strategic business consulting firm that helps businesses, institutions, and entrepreneurs overcome financial inefficiencies, weak internal controls, stagnant growth, poor brand visibility, and supply chain challenges. We provide integrated consulting solutions across finance, auditing, business development, branding, and procurement empowering our clients to achieve profitability, accountability, operational excellence, and competitive market positioning.</p>
+
+      <p>Unlike traditional consultants who address problems in isolation, we examine every aspect of the business and base our advice on real data and evidence, ensuring sustainable growth and long-term impact.</p>
+
+      
+  </div>
+</section>
+<!-- ===== VISION, MISSION & CORE VALUES ===== -->
+<section id="vmc" class="vmc-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Our Purpose</div>
+      <h2>Vision, Mission & <em>Core Values</em></h2>
+    </div>
+
+    <div class="vmc-grid">
+      <!-- Vision -->
+      <div class="vmc-card">
+        <h3>Vision</h3>
+        <p>To be the trusted partner driving sustainable growth and competitiveness for businesses and entrepreneurs across Africa through solutions that use data and evidence to create meaningful results.</p>
+      </div>
+
+      <!-- Mission -->
+      <div class="vmc-card">
+        <h3>Mission</h3>
+        <p>To deliver innovative, reliable, and practical consulting solutions in finance, auditing, business development, branding, and procurement, enabling our clients to improve profitability, strengthen accountability, optimize operations, and expand market reach.</p>
+      </div>
+
+      <!-- Core Values -->
+      <div class="vmc-card">
+        <h3>Core Values</h3>
+        <ul class="core-values">
+          <li>Integrity</li>
+          <li>Excellence</li>
+          <li>Innovation</li>
+          <li>Collaboration</li>
+          <li>Accountability</li>
+          <li>Sustainability</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="section-header reveal">
+    <div class="section-tag">What We Do</div>
+    <h2>Our Core <em>Services</em></h2>
+    <p>We provide practical, data-driven support that helps individuals and businesses become more efficient, profitable, and successful.</p>
+  </div>
+  
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-num">01</div>
+      <span class="service-icon">📊</span>
+      <h3>Financial Management, Auditing & Tax Administration Training</h3>
+      <p>Enhancing financial skills, auditing expertise, and tax administration capabilities for individuals and businesses to optimize performance and compliance.</p>
+      <span class="service-link" onclick="scrollTo('contact')">Enquire Now →</span>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-num">02</div>
+      <span class="service-icon">🎨</span>
+      <h3>Branding & Market Visibility</h3>
+      <p>Develop your brand identity and market presence through innovative strategies and campaigns that attract attention and drive growth.</p>
+      <span class="service-link" onclick="scrollTo('contact')">Enquire Now →</span>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-num">03</div>
+      <span class="service-icon">🛠️</span>
+      <h3>Internal Control & Business Systems</h3>
+      <p>Implement robust internal controls and efficient business systems to improve accuracy, accountability, and operational efficiency.</p>
+      <span class="service-link" onclick="scrollTo('contact')">Enquire Now →</span>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-num">04</div>
+      <span class="service-icon">📈</span>
+      <h3>Business Development & Growth Strategy</h3>
+      <p>Create strategies for business expansion, market penetration, and sustainable growth to maximize opportunities and profitability.</p>
+      <span class="service-link" onclick="scrollTo('contact')">Enquire Now →</span>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-num">05</div>
+      <span class="service-icon">🚚</span>
+      <h3>Procurement & Supply Chain Optimization</h3>
+      <p>Optimize your procurement processes and supply chain operations to reduce costs, increase efficiency, and ensure timely delivery.</p>
+      <span class="service-link" onclick="scrollTo('contact')">Enquire Now →</span>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-num">06</div>
+      <span class="service-icon">💡</span>
+      <h3>Technical & Soft Skills Training</h3>
+      <p>Empower your team with technical expertise and soft skills that enhance productivity, collaboration, and overall performance.</p>
+      <span class="service-link" onclick="scrollTo('contact')">Enquire Now →</span>
+    </div>
+  </div>
+</section>
+<!-- ===== TEAM ===== -->
+<section id="team">
+  <div class="section-header reveal">
+    <div class="section-tag">Our People</div>
+    <h2>Meet the <em>Team</em></h2>
+  </div>
+  <div class="team-grid">
+    <div class="team-card reveal">
+      <div class="team-avatar">👔</div>
+      <div class="team-info">
+        <h3>Alhaji B. Bangura</h3>
+        <div class="team-role">Chief Executive Officer</div>
+        <p class="team-bio">20+ years of strategic leadership experience across West Africa's financial and business sectors.</p>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <div class="team-avatar">👩‍💼</div>
+      <div class="team-info">
+        <h3>Aminata H. Koroma</h3>
+        <div class="team-role">Director of Finance</div>
+        <p class="team-bio">CPA with expertise in corporate finance, investment analysis, and regulatory compliance.</p>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <div class="team-avatar">🧑‍💻</div>
+      <div class="team-info">
+        <h3>Mohamed S. Kamara</h3>
+        <div class="team-role">Head of Strategy</div>
+        <p class="team-bio">Former McKinsey consultant specializing in market entry strategies and organizational restructuring.</p>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <div class="team-avatar">👩‍🔬</div>
+      <div class="team-info">
+        <h3>Fatima J. Sesay</h3>
+        <div class="team-role">HR & Development Lead</div>
+        <p class="team-bio">Certified HR professional driving talent transformation and organizational excellence programs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BLOG ===== -->
+<section id="blog">
+  <div class="section-header reveal">
+    <div class="section-tag">Insights</div>
+    <h2>Latest from Our <em>Blog</em></h2>
+  </div>
+  <div class="blog-grid" id="blogGrid">
+    <!-- Populated by JS -->
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="section-header reveal">
+    <div class="section-tag">Get in Touch</div>
+    <h2>Let's Work <em>Together</em></h2>
+  </div>
+  <div class="contact-wrapper">
+    <div class="contact-info reveal">
+      <h3>Ready to Transform Your Business?</h3>
+      <p>Whether you're looking to optimize operations, develop strategy, or navigate complex business challenges, our team is ready to help.</p>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div class="contact-detail">
+          <strong>Office Address</strong>
+          <span>12 Wilberforce Street, Freetown, Sierra Leone</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div class="contact-detail">
+          <strong>Phone Number</strong>
+          <span>+232 76 000 000</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-detail">
+          <strong>Email Address</strong>
+          <span>info@bahmanagement.sl</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">🕐</div>
+        <div class="contact-detail">
+          <strong>Business Hours</strong>
+          <span>Mon – Fri: 8:00 AM – 5:00 PM</span>
+        </div>
+      </div>
+    </div>
+    
+          <label>Service Interested In</label>
+          <select id="csvc">
+            <option value="">Select a service...</option>
+            <option>Strategic Management</option>
+            <option>Financial Advisory</option>
+            <option>Operations Consulting</option>
+            <option>HR & Talent Development</option>
+            <option>Risk Management</option>
+            <option>Digital Transformation</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea id="cmsg" rows="5" placeholder="Tell us about your project or challenge..."></textarea>
+        </div>
+        <button class="btn-primary" style="width:100%" onclick="submitContact()">Send Message</button>
+      </div>
+      <div class="form-success" id="contactSuccess">
+        <div class="check">✅</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:0.5rem;">Message Received!</h3>
+        <p style="color:var(--muted)">Thank you for reaching out. Our team will get back to you within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo">BAH<span> Management</span></div>
+      <p>Delivering strategic excellence and transformative management solutions for businesses across Sierra Leone and West Africa.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a onclick="scrollTo('about')">About Us</a></li>
+        <li><a onclick="scrollTo('team')">Our Team</a></li>
+        <li><a onclick="scrollTo('blog')">Blog</a></li>
+        <li><a onclick="scrollTo('contact')">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a>Strategic Management</a></li>
+        <li><a>Financial Advisory</a></li>
+        <li><a>Operations Consulting</a></li>
+        <li><a>HR Development</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a>Privacy Policy</a></li>
+        <li><a>Terms of Service</a></li>
+        <li><a>Cookie Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 BAH Management Solutions. All rights reserved.</span>
+    <span style="color:var(--gold)"></span>
+  </div>
+</footer>
+
+<!-- ===== LOGIN MODAL ===== -->
+<div class="modal-overlay" id="loginModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeLogin()">✕</button>
+    <h2>Admin <em>Login</em></h2>
+    <p>Enter your credentials to access the admin panel.</p>
+    <div class="login-error" id="loginError">Incorrect username or password.</div>
+    <div class="form-group">
+      <label>Username</label>
+      <input type="text" id="loginUser" placeholder="admin" onkeydown="if(event.key==='Enter')doLogin()">
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" id="loginPass" placeholder="••••••••" onkeydown="if(event.key==='Enter')doLogin()">
+    </div>
+    <button class="btn-primary" style="width:100%;margin-top:0.5rem" onclick="doLogin()">Sign In</button>
+    <p style="margin-top:1rem;font-size:0.8rem;color:var(--muted);text-align:center">Default: admin / bah2025</p>
+  </div>
+</div>
+
+<!-- ===== ADMIN PANEL ===== -->
+<div id="admin-panel">
+  <div class="admin-topbar">
+    <h2>BAH Admin Dashboard</h2>
+    <div style="display:flex;align-items:center;gap:1rem">
+      <span style="color:var(--muted);font-size:0.85rem">👤 Administrator</span>
+      <button class="btn-outline" style="padding:8px 16px;font-size:0.8rem" onclick="logoutAdmin()">Sign Out</button>
+    </div>
+  </div>
+  <div class="admin-body">
+    <div class="admin-sidebar">
+      <div class="admin-nav-item active" onclick="switchTab('dashboard',this)">
+        <span>📊</span><span>Dashboard</span>
+      </div>
+      <div class="admin-nav-item" onclick="switchTab('new-post',this)">
+        <span>✏️</span><span>New Post</span>
+      </div>
+      <div class="admin-nav-item" onclick="switchTab('manage-posts',this)">
+        <span>📋</span><span>Manage Posts</span>
+      </div>
+    </div>
+    <div class="admin-content">
+
+      <!-- Dashboard Tab -->
+      <div class="admin-tab active" id="tab-dashboard">
+        <h3>Dashboard Overview</h3>
+        <p>Welcome back! Here's a quick snapshot of your blog.</p>
+        <div class="admin-stats-grid">
+          <div class="admin-stat">
+            <div class="num" id="dashPostCount">3</div>
+            <div class="label">Total Posts</div>
+          </div>
+          <div class="admin-stat">
+            <div class="num">✅</div>
+            <div class="label">Status: Online</div>
+          </div>
+          <div class="admin-stat">
+            <div class="num">2025</div>
+            <div class="label">Current Year</div>
+          </div>
+        </div>
+        <div style="background:var(--dark2);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:1.5rem;max-width:600px">
+          <h4 style="margin-bottom:1rem;color:var(--white)">Quick Actions</h4>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap">
+            <button class="btn-primary" onclick="switchTab('new-post',document.querySelector('[onclick=\'switchTab(\\\"new-post\\\",this)\\\'\']'))">+ Write New Post</button>
+            <button class="btn-outline" onclick="switchTab('manage-posts',null)">View All Posts</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Post Tab -->
+      <div class="admin-tab" id="tab-new-post">
+        <h3>Write New Post</h3>
+        <p>Create a new blog post that will appear on the website.</p>
+        <div class="post-form">
+          <div class="form-group">
+            <label>Post Title *</label>
+            <input type="text" id="postTitle" placeholder="Enter an engaging title...">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Category</label>
+              <select id="postCat">
+                <option>Strategy</option>
+                <option>Finance</option>
+                <option>HR</option>
+                <option>Operations</option>
+                <option>Technology</option>
+                <option>Leadership</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Emoji / Icon</label>
+              <input type="text" id="postEmoji" placeholder="📊" value="📊" maxlength="4">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Excerpt (short summary)</label>
+            <input type="text" id="postExcerpt" placeholder="A brief summary shown in blog listing...">
+          </div>
+          <div class="form-group">
+            <label>Full Content *</label>
+            <textarea id="postContent" placeholder="Write your full article here..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Author Name</label>
+            <input type="text" id="postAuthor" placeholder="e.g. A. Bangura" value="BAH Editorial">
+          </div>
+          <div style="display:flex;gap:1rem;align-items:center;flex-wrap:wrap">
+            <button class="btn-primary" onclick="publishPost()">Publish Post</button>
+            <button class="btn-outline" onclick="clearPostForm()">Clear Form</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Manage Posts Tab -->
+      <div class="admin-tab" id="tab-manage-posts">
+        <h3>Manage Posts</h3>
+        <p>Edit or delete existing blog posts.</p>
+        <div class="blog-posts-list" id="adminPostsList"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="success-toast" id="toast"></div>
+
+<script>
+  
+// =================== STATE ===================
+let blogPosts = [
+  {
+    id: 1,
+    title: "5 Strategic Pillars Every Growing Business Needs",
+    category: "Strategy",
+    excerpt: "Discover the foundational strategies that separate high-growth companies from the rest in today's competitive landscape.",
+    content: "Full content here...",
+    author: "A. Bangura",
+    date: "Dec 10, 2024",
+    emoji: "📊"
+  },
+  {
+    id: 2,
+    title: "Financial Planning in an Uncertain Economic Climate",
+    category: "Finance",
+    excerpt: "How to build financial resilience and navigate volatility with smart planning frameworks and adaptive budgeting.",
+    content: "Full content here...",
+    author: "A. Koroma",
+    date: "Nov 28, 2024",
+    emoji: "💰"
+  },
+  {
+    id: 3,
+    title: "Building a High-Performance Culture in African Enterprises",
+    category: "HR",
+    excerpt: "The unique challenges and proven approaches to cultivating excellence within African organizational contexts.",
+    content: "Full content here...",
+    author: "F. Sesay",
+    date: "Nov 15, 2024",
+    emoji: "🌍"
+  }
+];
+
+let nextId = 4;
+let editingId = null;
+
+// =================== NAVIGATION ===================
+function scrollTo(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  closeMenu();
+}
+
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+
+function closeMenu() {
+  document.getElementById('navLinks').classList.remove('open');
+}
+
+// Counter animation
+function animateCounters() {
+  document.querySelectorAll('[data-count]').forEach(el => {
+    const target = parseInt(el.dataset.count);
+    let current = 0;
+    const step = target / 60;
+    const timer = setInterval(() => {
+      current = Math.min(current + step, target);
+      el.textContent = Math.floor(current) + (el.dataset.count == '98' ? '%' : '+');
+      if (current >= target) clearInterval(timer);
+    }, 16);
+  });
+}
+
+// Scroll reveal
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Start counters when hero is visible
+const heroObserver = new IntersectionObserver(entries => {
+  if (entries[0].isIntersecting) {
+    setTimeout(animateCounters, 800);
+    heroObserver.disconnect();
+  }
+}, { threshold: 0.3 });
+heroObserver.observe(document.getElementById('home'));
+
+// =================== BLOG RENDERING ===================
+function renderBlog() {
+  const grid = document.getElementById('blogGrid');
+  grid.innerHTML = blogPosts.slice(0, 6).map((p, i) => `
+    <div class="blog-card">
+      <div class="blog-img" style="background:${getBlogGradient(i)}">
+        <span style="font-size:3rem;position:relative;z-index:1">${p.emoji}</span>
+        <div class="blog-category">${p.category}</div>
+      </div>
+      <div class="blog-body">
+        <div class="blog-meta">
+          <span>📅 ${p.date}</span>
+          <span>✍️ ${p.author}</span>
+        </div>
+        <h3>${p.title}</h3>
+        <p>${p.excerpt}</p>
+      </div>
+    </div>
+  `).join('');
+}
+
+function getBlogGradient(i) {
+  const grads = [
+    'linear-gradient(135deg,#1a1525,#2a1a35)',
+    'linear-gradient(135deg,#0f1a25,#1a2535)',
+    'linear-gradient(135deg,#1a150a,#2a2010)',
+    'linear-gradient(135deg,#0a1a1a,#1a2a25)',
+    'linear-gradient(135deg,#1a0a0a,#2a1515)',
+    'linear-gradient(135deg,#101a25,#1a2535)'
+  ];
+  return grads[i % grads.length];
+}
+
+renderBlog();
+
+// =================== CONTACT FORM ===================
+function submitContact() {
+  const fn = document.getElementById('cfn').value.trim();
+  const em = document.getElementById('cem').value.trim();
+  const msg = document.getElementById('cmsg').value.trim();
+  if (!fn || !em || !msg) {
+    showToast('Please fill in all required fields.');
+    return;
+  }
+  document.getElementById('contactFormWrap').style.display = 'none';
+  document.getElementById('contactSuccess').classList.add('show');
+}
+
+// =================== LOGIN ===================
+const ADMIN_USER = 'admin';
+const ADMIN_PASS = 'bah2025';
+
+function openLogin() {
+  document.getElementById('loginModal').classList.add('open');
+  document.getElementById('loginUser').focus();
+}
+
+function closeLogin() {
+  document.getElementById('loginModal').classList.remove('open');
+  document.getElementById('loginError').classList.remove('show');
+}
+
+// Handle /admin route
+if (window.location.pathname === '/admin' || window.location.hash === '#admin') {
+  openLogin();
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closeLogin();
+  }
+});
+
+document.getElementById('loginModal').addEventListener('click', e => {
+  if (e.target === document.getElementById('loginModal')) closeLogin();
+});
+
+function doLogin() {
+  const u = document.getElementById('loginUser').value;
+  const p = document.getElementById('loginPass').value;
+  if (u === ADMIN_USER && p === ADMIN_PASS) {
+    closeLogin();
+    openAdmin();
+  } else {
+    document.getElementById('loginError').classList.add('show');
+    document.getElementById('loginPass').value = '';
+  }
+}
+
+// =================== ADMIN ===================
+function openAdmin() {
+  document.getElementById('admin-panel').classList.add('open');
+  renderAdminPosts();
+  updateDashStats();
+}
+
+function logoutAdmin() {
+  document.getElementById('admin-panel').classList.remove('open');
+  showToast('Logged out successfully.');
+}
+
+function switchTab(name, el) {
+  document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.admin-nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  if (el) el.classList.add('active');
+  else {
+    const items = document.querySelectorAll('.admin-nav-item');
+    items.forEach(item => {
+      if (item.textContent.toLowerCase().includes(name.replace('-', ' '))) {
+        item.classList.add('active');
+      }
+    });
+  }
+  if (name === 'manage-posts') renderAdminPosts();
+}
+
+function publishPost() {
+  const title = document.getElementById('postTitle').value.trim();
+  const content = document.getElementById('postContent').value.trim();
+  const excerpt = document.getElementById('postExcerpt').value.trim();
+
+  if (!title || !content) {
+    showToast('Title and content are required.');
+    return;
+  }
+
+  const now = new Date();
+  const date = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+
+  if (editingId !== null) {
+    const idx = blogPosts.findIndex(p => p.id === editingId);
+    blogPosts[idx] = {
+      ...blogPosts[idx],
+      title,
+      category: document.getElementById('postCat').value,
+      excerpt: excerpt || title,
+      content,
+      author: document.getElementById('postAuthor').value || 'BAH Editorial',
+      emoji: document.getElementById('postEmoji').value || '📊'
+    };
+    editingId = null;
+    showToast('Post updated successfully!');
+  } else {
+    blogPosts.unshift({
+      id: nextId++,
+      title,
+      category: document.getElementById('postCat').value,
+      excerpt: excerpt || title,
+      content,
+      author: document.getElementById('postAuthor').value || 'BAH Editorial',
+      date,
+      emoji: document.getElementById('postEmoji').value || '📊'
+    });
+    showToast('Post published successfully!');
+  }
+
+  clearPostForm();
+  renderBlog();
+  updateDashStats();
+  switchTab('manage-posts', null);
+}
+
+function clearPostForm() {
+  ['postTitle','postExcerpt','postContent'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('postEmoji').value = '📊';
+  document.getElementById('postAuthor').value = 'BAH Editorial';
+  editingId = null;
+}
+
+function editPost(id) {
+  const post = blogPosts.find(p => p.id === id);
+  if (!post) return;
+  editingId = id;
+  document.getElementById('postTitle').value = post.title;
+  document.getElementById('postCat').value = post.category;
+  document.getElementById('postExcerpt').value = post.excerpt;
+  document.getElementById('postContent').value = post.content;
+  document.getElementById('postAuthor').value = post.author;
+  document.getElementById('postEmoji').value = post.emoji;
+  switchTab('new-post', document.querySelectorAll('.admin-nav-item')[1]);
+  showToast('Editing post. Make changes and click Publish.');
+}
+
+function deletePost(id) {
+  if (!confirm('Delete this post permanently?')) return;
+  blogPosts = blogPosts.filter(p => p.id !== id);
+  renderAdminPosts();
+  renderBlog();
+  updateDashStats();
+  showToast('Post deleted.');
+}
+
+function renderAdminPosts() {
+  const list = document.getElementById('adminPostsList');
+  if (blogPosts.length === 0) {
+    list.innerHTML = '<p style="color:var(--muted)">No posts yet. Write your first post!</p>';
+    return;
+  }
+  list.innerHTML = blogPosts.map(p => `
+    <div class="post-item">
+      <div class="post-item-info">
+        <h4>${p.emoji} ${p.title}</h4>
+        <span>${p.category} · ${p.date} · By ${p.author}</span>
+      </div>
+      <div class="post-actions">
+        <button class="btn-sm edit" onclick="editPost(${p.id})">Edit</button>
+        <button class="btn-sm delete" onclick="deletePost(${p.id})">Delete</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function updateDashStats() {
+  document.getElementById('dashPostCount').textContent = blogPosts.length;
+}
+
+// =================== TOAST ===================
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+// Sticky nav shadow
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  nav.style.boxShadow = window.scrollY > 50 ? '0 4px 30px rgba(0,0,0,0.4)' : 'none';
+});
+</script>
+</body>
+</html>
